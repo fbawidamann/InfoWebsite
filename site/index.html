@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Startseite - [DEIN NAME]</title>
+  <meta name="description" content="Portfolio von [DEIN NAME], Student der Wirtschaftsinformatik an der [DEINE HOCHSCHULE] – Projekte zu Servern, Post-Quanten-Kryptographie und Webentwicklung.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar el-drknuq">
+    <a class="navbar-logo" href="#">[DEIN NAME]</a>
+    <ul class="navbar-links">
+      <li><a href="#">Startseite</a></li>
+      <li><a href="#projekte">Projekte</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </nav>
+  <header class="hero" id="START">
+    <h1 class="heading">[DEIN NAME]&nbsp;&ndash; Student Wirtschafts&shy;informatik</h1>
+    <p class="text">Ich bin [DEIN NAME], studiere Wirtschaftsinformatik an der [DEINE HOCHSCHULE] und diese Seite soll meine Projekte darstellen.</p>
+    <a class="btn el-lfb5ky" href="#projekte">Projekte</a>
+    <p class="text el-adcjrc">Die ganze Seite läuft auf meinem eigenen VPS von Hostinger</p>
+  </header>
+  <section class="section" id="projekte">
+    <div class="container">
+      <h2 class="heading el-63p4su">Meine Projekte</h2>
+      <p class="text el-j60jo4">Zwei davon sind innerhalb der Module meines Studienganges geschehen, wovon eines im Praxissemester (Malaysia) gemacht wurde. </p>
+      <div class="columns el-ec2s34">
+        <div class="container">
+          <div class="card el-9zwl65">
+            <p class="text el-1vwtbo">🔒</p>
+            <h3 class="heading">VPS</h3>
+            <p class="text">Eigenes Projekt unabhängig vom Studium</p>
+            <a class="link" href="#VPS">Mehr Informationen →</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card el-t6dfva">
+            <p class="text el-w3hnhu">✍🏻</p>
+            <h3 class="heading">QRUOV-Algorithmus</h3>
+            <p class="text">Im praktischen Auslandssemester gefertigtes Projekt</p>
+            <a class="link" href="#QRUOV">Mehr Informationen →</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card el-rd02a5">
+            <p class="text el-fn5th2">💻</p>
+            <h3 class="heading">Webapp</h3>
+            <p class="text">Im zweiten Semester erstelltes Projekt</p>
+            <a class="link" href="#WEBAPP">Mehr Informationen →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section el-i2fuqm" id="VPS">
+    <div class="container">
+      <div class="columns el-y4jv75">
+        <div class="container">
+          <img class="image" src="assets/img/vps.png" alt="Stilisierte Darstellung eines abgesicherten Servers" width="1200" height="900">
+        </div>
+        <div class="container">
+          <h2 class="heading">VPS</h2>
+          
+          <p class="text el-rcx0cp">Auf diesem virtuellen privaten Server sind aufgesetzt:</p>
+          <ul class="list">
+            <li>Docker-Container für Traefik, Webseiten, Game-Server</li>
+            <li>Sicherung durch SSH (public, private Key), ufw-Firewall und fail2ban </li>
+            <li>Hermes-KI Agent; verbunden über Telegram API</li>
+          </ul>
+          <a class="link" href="./vps.html">Details zum Server→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section el-r9eiu6" id="QRUOV">
+    <div class="container">
+      <div class="columns el-30b08k">
+        <div class="container">
+          <h2 class="heading">QRUOV-Algorithmus</h2>
+          
+          <p class="text el-597p4o">Dies spiegelt mein Projekt welches ich im Auslandssemester in Malaysia fertiggestellt habe dar.
+            Es handelt sich um einen Signatur-Algorithmus, der auch bei Verwendung von Quantencomputern nicht entschlüsselbar sein soll.
+          </p>
+          <ul class="list">
+            <li>Bestehenden CPU-Referenz Code genommen und für GPU angepasst</li>
+            <li>Dabei verschiedene Parallelisierungsansätze verfolgt und angewandt</li>
+            <li>Schreiben eines Papers (vorgesehen für IEEE)</li>
+          </ul>
+          <a class="link" href="./qruov.html">Details zum Algorithmus→</a>
+        </div>
+        <div class="container">
+          <img class="image" src="assets/img/QRUOV_Verify.png" alt="Pseudocode des Verify-Algorithmus des QRUOV-Signaturverfahrens">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section el-c9xe59" id="WEBAPP">
+    <div class="container">
+      <div class="columns el-legkua">
+        <div class="container"> 
+          <img class="image" src="assets/img/Halle_WebApp.png" alt="Screenshot der Hallen-Buchungs-Website mit Buchungsformular für Hallen und Trainer">
+        </div>
+        <div class="container">
+          <h2 class="heading">Webapp</h2>
+    
+          <p class="text el-kdmdg3">Der erste Versuch im zweiten Semester meines Studiums eine Web Anwendung zu bauen.
+            Diese sollte eine Hallen und Trainer Buchungsseite werden. Das Projekt sollte einen Einblick in die Web-Entwicklung geben.
+          </p>
+          <ul class="list">
+            <li>Verwendung von HTML, CSS, Python (Pycharm) und Git</li>
+            <li>Erstellen von Diagrammen (Anwendungsfalldiagramm und Klassendiagramm)</li>
+            <li>Integration einer MySQL Datenbank</li>
+          </ul>
+          <a class="link" href="./webapp.html">Details zum Webserver→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section el-a4epwf" id="links">
+    <div class="container">
+      <h2 class="heading">Links</h2>
+      <a class="el-am3151" href="https://github.com/fbawidamann"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
+      <a class="el-7a3ly2" href="mailto:deine-email@example.com"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>Email</span></a>
+      <a class="el-6wr54s" href="https://www.linkedin.com/in/florian-bawidamann-1ab80539a/"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>LinkedIn</span></a>
+    </div>
+  </section>
+  <footer class="footer">
+    <nav class="navbar">
+      <span>&copy; [DEIN NAME]</span>
+      <ul class="navbar-links">
+        <li><a href="./impressum.html">Impressum</a></li>
+        <li><a href="./datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

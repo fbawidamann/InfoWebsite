@@ -1,0 +1,18 @@
+# Logs and runtime data
+logs/
+*.log
+*.log.*
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Archives and backups
+*.zip
+*.tar
+*.tar.gz
+*.bak
+*.old

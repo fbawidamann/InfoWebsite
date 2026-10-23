@@ -1,0 +1,17 @@
+services:
+  info-web:
+    build: .
+    container_name: InfoHTML
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./logs:/var/log/nginx
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.info.rule=Host(`info.fbawidamannserver.cloud`)"
+      - "traefik.http.routers.info.entrypoints=web,websecure"
+      - "traefik.http.routers.info.tls=true"
+      - "traefik.http.routers.info.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.info.middlewares=secure-headers@file"
+      - "traefik.http.services.info.loadbalancer.server.url=http://127.0.0.1:63251"
+    network_mode: "host"
+    restart: unless-stopped

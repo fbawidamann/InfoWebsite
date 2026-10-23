@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VPS - [DEIN NAME]</title>
+  <meta name="description" content="Aufbau meines eigenen VPS: Docker, Traefik als Reverse Proxy, abgesichert mit SSH-Keys, ufw und fail2ban.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar el-drknuq">
+    <a class="navbar-logo" href="./index.html">[DEIN NAME]</a>
+    <ul class="navbar-links">
+      <li><a href="./index.html">Startseite</a></li>
+      <li><a href="./index.html#projekte">Projekte</a></li>
+      <li><a href="./index.html#links">Links</a></li>
+    </ul>
+  </nav>
+  <section class="section" id="projekte">
+    <div class="container">
+      <h2 class="heading el-63p4su">Aufbau des VPS</h2>
+      <p class="text el-j60jo4">Erstellt mit draw.io</p>
+      <a href="assets/img/VPS-Architektur_drawio.png" target="_blank" rel="noopener">
+        <img class="image image-natural" src="assets/img/VPS-Architektur_drawio.png" alt="Architektur-Diagramm des VPS (draw.io)" width="601" height="711">
+      </a>
+    </div>
+  </section>
+  <section class="section" id="erklaerung">
+    <div class="container">
+      <h2 class="heading">Erklärung</h2>
+      <h3 class="heading">Hostinger</h3>
+      <ul class="list">
+        <li>Server läuft als VPS bei Hostinger</li>
+        <li>Ubuntu-Image genutzt</li>
+        <li>Domain auch bei Hostinger eingerichtet und verwaltet</li>
+      </ul>
+      <h3 class="heading">SSH</h3>
+      <ul class="list">
+        <li>Änderung des Standard Ports 22 auf secret</li>
+        <li>Passwort-Anmeldung deaktiviert (Anmeldung nur mit private + public key möglich)</li>
+        <li>Nutzung von ufw-Firewall und fail2ban</li>
+      </ul>
+      <h3 class="heading">Traefik</h3>
+      <ul class="list">
+        <li>Läuft als Reverse Proxy in einem eigenen Docker-Container</li>
+        <li>Leitet eingehende Anfragen automatisch an die passenden Container weiter</li>
+        <li>Stellt TLS-Zertifikate über Let's Encrypt automatisch aus und erneuert sie</li>
+      </ul>
+      <h3 class="heading">Docker</h3>
+      <ul class="list">
+        <li>Webseiten, Traefik, Game-Server und der Hermes-KI-Agent laufen isoliert in eigenen Containern</li>
+        <li>Vereinfacht Wartung und Updates der einzelnen Anwendungen</li>
+        <li>Saubere Trennung der Dienste voneinander</li>
+      </ul>
+      <h3 class="heading">Hermes-KI-Agent</h3>
+      <ul class="list">
+        <li>KI kann Server steuern, Informationen geben, Dateien erstellen, bearbeiten und löschen</li>
+        <li>Nur erreichbar per direktem Aufruf und Telegram API</li>
+        <li>Nutzt Modell von Anthropic (Opus 5)</li>
+      </ul>
+      <h3 class="heading">Zusätzliche Info</h3>
+      <p>Dieses Projekt entstand nicht durch ein spezifisches Modul während meines Studiums. Jedoch wurde ich durch das Modul
+        "Betriebssysteme" auf die Nutzung von linux basierten OS aufmerksam. Durch verschiedenste Youtube-Videos stieg mein Interesse daran auch einen eigenen
+        Server zu haben, auf dem ich Dinge ausprobieren, und neues erlernen kann.
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <nav class="navbar">
+      <span>&copy; [DEIN NAME]</span>
+      <ul class="navbar-links">
+        <li><a href="./impressum.html">Impressum</a></li>
+        <li><a href="./datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
